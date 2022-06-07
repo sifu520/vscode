@@ -1,0 +1,40 @@
+#container{
+    width: 1002px;
+    background: gray;
+}
+#header{
+    height: 120px;
+    background: brown;
+}
+#banner{
+    height: 237px;
+    background: blue;
+}
+#main{
+    height: 600px;
+    background: green;
+}
+#lside{
+    width: 700px;
+    float: left;
+    height: 600px;
+    background: pink;
+}
+#rside{
+    width: 302px;
+    float:right;
+    height: 600px;
+    background: purple;
+}
+#footer{
+    height: 120px;
+    background: blue;
+}
+
+.four{
+    width: 330px;
+    height: 280px;
+    background: white;
+    float: left;
+    margin: 10px;
+}
