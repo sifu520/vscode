@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#boxer{
+    width: 200px;
+    height: 200px;
+    border: solid  50px blue;
+    padding: 30px;
+    margin: 0px 0px 20px 0px;
+    background: #1ace32;
+}
+#footer{
+    width: 200px;
+    height: 200px;
+    background: #e08804;
+}
+/* 
+宽：width
+高：height
+边框：border
+内边距:padding
+外边距：margin 
+
+盒模型的深入探讨：
+1个盒子在页面上到底占多大的空间？
+答：width和height是指允许写内容的区域大小，也就说：padding往里的内容。
+一个盒子本身有多大？
+水平：左边框 + 左内边距 + 内容宽度 + 右内边距 + 右边框
+竖直：上边框 + 上内边距 + 高度 + 下内边距 + 下边框
+一个盒子要占据多少空间？
+水平：左外边距 + 左边框 + 左内边距 + 内容宽度 + 右内边距 + 右边框 + 右外边距
+竖直：上外边距 + 上边框 + 上内边距 + 宽度 + 下内边距 + 下边框 + 下外边距
+*/
+</style>
+<body>
+    <div id="boxer">
+        我是内容，我是内容！！
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
