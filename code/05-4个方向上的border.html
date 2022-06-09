@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        #foo{
+            width: 300px;
+            height: 300px;
+            background: green;
+            border: 20px;
+        }
+    </style>
+    <!-- 
+    边框的写法：
+    边框border和margin，padding不一样，因为margin，padding仅仅需要一个数字的值就能表示/
+    但是边框不仅需要指明像素宽度，还需要指明形状和颜色
+
+    边框的指定方式：border，形状 宽度  颜色
+    例：border:solid 20px red;
+
+    不能像margin padding那样把2，3，4个边框的值连着写。
+    即：border:solid 20px red solide 30px green,------这样是不对的。
+
+    如果要想指定4个边框为不同的效果，可以用：
+    border-top/right/bottom/left来分别指定
+     -->
+</head>
+<body>
+    <div id="foo"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动模型</title>
+<style type="text/css">
+#foo{
+    width: 200px;
+    height: 200px;
+    background: green;
+    float: left;
+}
+#bear{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    float: left;
+}
+#r{
+    width: 200px;
+    height: 400px;
+    background: gray;
+    float: right;
+}
+#bt{
+    clear: both;    /* 清除左右浮动元素  也可以clear:left; 清除左侧浮动元素，clear:right; 清除右侧浮动元素 */
+    width: 1000px;
+    height: 200px;
+    background: gold;
+}
+</style>
+</head>
+<body>
+    <div id="foo"></div>
+    <div id="bear"></div>
+    <div id="r"></div>
+    <div id="bt"></div>
+
+</body>
+</html>

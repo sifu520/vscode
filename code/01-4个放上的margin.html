@@ -12,16 +12,35 @@
             border: 0;
         }
         #foo {
+            float: left;
             width: 300px;
             height: 300px;
             background: green;
-            margin: 20px;
+            /* 
+            margin: 10px; 
+            margin:10px 20px;
+            margin:10px 20px 30px;
+            margin:10px 20px 30px 40px;
+            margin:0 0 0 30px;
+            */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+
         }
 
         #bear {
-            width: 300px;
+            float: left;
+            width: 600px;
             height: 300px;
-            background: rgb(7, 20, 211);
+            background: blue;
+        }
+        #foot{
+            clear: left;
+            width: 600px;
+            height: 300px;
+            background: orange;
         }
     </style>
 <!-- 
@@ -46,10 +65,21 @@ margin:10px;是设置4个方向上的margin值，都为10px;
 margin:10px 20px 30px 40px ,则分别是设置上，右，下，左 方向上的margin值
 如果margin值只设置了2个，或3个，
 
+也可以用margin-top/right/bottom/left 来分别设置4个方向的值
+
+如何用margin来居中？
+可以通过设置margin:0 auto; 即左右的外边距为“自动”，即可使左右居中
+
+注意：css只支持用auto来进行左右居中，竖直方向用auto无法。，，，///示例在02-通过margin来居中.html 观察
+
+
+margin 外边距有重叠效果
+就是在竖直方向，当两个元素的外边距连在一块时，两者的距离并不是两者margin之和，而是取最大margin为准，//示例03-外边距重叠
 -->
 </head>
 <body>
     <div id="foo"></div>
     <div id="bear"></div>
+    <div id="foot"></div>
 </body>
 </html>
