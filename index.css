@@ -2,6 +2,7 @@
 #container{
     width: 1002px;
     background: gray;
+    margin: 0 auto;
 }
 #header{
     height: 120px;
@@ -10,32 +11,47 @@
 #banner{
     height: 237px;
     background: blue;
+    margin: 10px 0;
 }
 #main{
-    height: 600px;
-    background: green;
+    height: 464px;
+    /* background: green; */
 }
 #lside{
-    width: 700px;
+    width: 694px;
     float: left;
-    height: 600px;
+    height: 464px;
     background: pink;
 }
 #rside{
-    width: 302px;
+    width: 294px;
     float:right;
-    height: 600px;
-    background: purple;
+    height: 464px;
+    background: gray;
 }
 #footer{
+    margin-top: 10px;
     height: 53px;
-    background: blue;
+    background: rgb(207, 245, 68);
 }
 
 .four{
-    width: 330px;
-    height: 280px;
+    width: 337px;
+    height: 222px;
     background: white;
     float: left;
-    margin: 10px;
+    margin: 5px;
+}
+
+#view{
+    width: 294px;
+    height: 227px;
+    margin-bottom: 10px;
+    background: rgb(15, 194, 185);
+}
+
+#contact{
+    width: 294px;
+    height: 227px;
+    background: slateblue;
 }
