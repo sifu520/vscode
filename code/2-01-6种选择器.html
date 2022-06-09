@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #foo {
+            background: gray;
+        }
+        .stu{
+            background: green;
+        }
+        div{        /* 标签选择器*/
+            margin:5px;
+        }
+        p,.stu{      /*群组选择器*/
+            border: solid 2px red;      
+        }
+    </style>
+</head>
+
+<body>
+    <h1>6种选择器</h1>
+    <div id="foo">
+        id选择器是利用元素的id来选中此元素，每个id在页面上是唯一的。<br>
+        用法：1、先给某元素起一个唯一的id值。2、在css里，用#id{}来选中此元素并控制. <br>
+    </div>
+    <div class="stu">
+        类选择器是利用元素的类名称，来选中一组元素。选中的这一组的元素，具有类名称相同.
+    </div>
+    <div class="stu">
+        我也是stu类
+    </div>
+    <div class="stu">
+        我也是stu类<br><br>
+    </div>
+    <p>我先来试试P标签，我想让p标签，和class=stu的元素，都加一个border,边框效果相同。<br>
+        可以使用 群组选择器 来简化代码。
+    </p>
+    <div></div>
+</body>
+
+</html>
