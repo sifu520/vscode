@@ -31,12 +31,19 @@
     background: gold;
 }
 </style>
+<!-- 
+    元素float:left后，将会遮挡后面的盒子，怎么理解这个模型？
+    答：因为float的元素先漂在半空中，所以后面的div会钻到float的元素底下，在屏幕上看来，就是一个被遮挡的效果
+
+    如果让后面的元素，不被float元素遮挡？
+    答：声明 clear:left/right/booth;
+    理解为一个声明：声明某个元素上面，不允许有，左浮元素/右浮元素/左，右浮元素。
+ -->
 </head>
 <body>
     <div id="foo"></div>
     <div id="bear"></div>
     <div id="r"></div>
     <div id="bt"></div>
-
 </body>
 </html>
