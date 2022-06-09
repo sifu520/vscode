@@ -1,3 +1,4 @@
+
 #container{
     width: 1002px;
     background: gray;
@@ -27,7 +28,7 @@
     background: purple;
 }
 #footer{
-    height: 120px;
+    height: 53px;
     background: blue;
 }
 
