@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>语义标签</title>
-    <style type="text/css">
-
-    </style>
-<!-- 
+    <style type="text/css"></style>
+    <!-- 
 Div 标签的局限？
 div,divistion，块，区域的意思
 在html里，div是负责划分大块区域
@@ -26,38 +24,45 @@ Div 是没有“语义性”的，div 和 h1 标签放在一块比较，最为�
 以h1为例，h1里面的文字会被搜索引擎做为分析页面内容时的重要参考。
 因为h1代表"1"号大标题，有其意义有语义性
 
+P:段落
+H(1-6):1-6号标题，文字越来越小
+Pre:保持源码的原样格式输出
+
 有一些内容类型，是div表达不出来的
 比如 要求你在页面内，引入超链接，引入一幅图片，或者一个flash，或者一段视频
+A 超链接，用法<a href="" title="" target="">文字或图片</a>
+img 引入图片，用法<img src="xxxx.gif" alt="图片的文字标签" title="提示文字">
+
+flash
+wmv,着两个标签，目前各种浏览器的引入方式不一样！！！
 
 有一些内容形式，用div来实现非常麻烦，也不适合。
 
  -->
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <h1>习近平会晤奥巴马</h1>
-        <p>p标签段落，一般用在文章的段落中，一篇文章，如果分为很多段，那么每段，建议用P标签来表示</p>
-        <p>而h1代表1号标题---最大</p>
-        <p>还有h2,到h6,2,3,4,5,6号标题，文字由大到小</p>
-        <h2>我是2号标题</h2>
-        <h3>我是3号标题</h3>
-        <h4>我是4号标题</h4>
-        <h5>我是5号标题</h5>
-        <h6>我是6号标题</h6>
-        
-        <h3>如果你想发代码，或者是想保持源码同样的效果，那么可以用pre标签</h3>
-        <p>
+      <h1>习近平会晤奥巴马</h1>
+      <p>
+        p标签段落，一般用在文章的段落中，一篇文章，如果分为很多段，那么每段，建议用P标签来表示
+      </p>
+      <p>而h1代表1号标题---最大</p>
+      <p>还有h2,到h6,2,3,4,5,6号标题，文字由大到小</p>
+      <h2>我是2号标题</h2>
+      <h3>我是3号标题</h3>
+      <h4>我是4号标题</h4>
+      <h5>我是5号标题</h5>
+      <h6>我是6号标题</h6>
+
+      <h3>如果你想发代码，或者是想保持源码同样的效果，那么可以用pre标签</h3>
+      <p>$age = 20; for($i=1;$i<100;$i++){ echo $i; }</p>
+      <pre>
             $age = 20;
             for($i=1;$i<100;$i++){
                 echo $i;
             }
-        </p>
-        <pre>
-            $age = 20;
-            for($i=1;$i<100;$i++){
-                echo $i;
-            }
-        </pre>
+      </pre
+      >
     </div>
-</body>
+  </body>
 </html>
