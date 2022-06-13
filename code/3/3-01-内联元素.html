@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>内联元素</title>
+    <style type="text/css">
+      p {
+        color: red;
+      }
+      span {
+        color: red;
+      }
+      a{
+        background: gray;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <!-- 
+    如果只想对一行内，某几个文字发挥作用
+
+    例：打了句话，<他是个好人>，还是一句话，
+    打了句话，<div>他是个好人</div>，还是一句话，...用div是达不到效果的，
+    因为div是块状元素，独占一行，把文字拆成了3行.
+
+    内联元素：
+    内联元素，又叫“行内元素”，w3c组织则称之为“行内框”，
+    网友的经典比喻...."行内元素"就是橡皮筋.
+
+    内联元素，只对每一行的文字起作用，或者说：内联的作用范围，不能跳出行的区域.
+
+    块状元素与内联元素的区别
+                独占一行    能设宽高    竖直方向的maring,padding
+    块状元素        是          是          有，可以设置
+    内联元素        否          否          没有，也不可以设置
+
+    内联元素与块状并不是完全无关的东西，可以相互转换，
+    可以通过元素的display属性来设置：
+    display:block; 强制声明某元素为块状元素
+    display:inline;强制声明为内联元素。
+    display:none;压根不显示，设置之后，该元素和该元素的子元素不再显示。
+    等同于这段代码被删除的效果，在页面内一点空间都不占。
+
+
+    内联元素下方的空白问题：
+
+    在一大段，N行(N>=2)文字中，
+    文字的行与行之间，有行距，每行行距也相等，
+    
+    但是在最后一行，与后面的块状元素，则有一个明显的边距
+    这个边距，是我们用CSS控制不了的。
+
+
+    图片是内联元素还是块状元素？
+
+    目前我们所学的：
+    Div,p,h*,pre,form是块状元素。
+    A，span,br,img是内联元素
+    
+    开发中，常碰到图片与下方的块状元素有空白的问题
+    原因：图片是内联元素，所有内联元素结束后，与后面的块状元素有一段空白。
+
+    解决：通过display来转换img为块状元素，然后在通过margin:0 来解决。
+ -->
+  <body>
+    <div>
+      今天是2月17日，
+      <p>情人节</p>
+      已经过去，别怀念了。
+    </div>
+    <br />
+
+    <div>
+      今天是2月17日，<span>情人节已经过去，别怀念了。 <br />
+        今天是2月17日，情人节已经过去，别怀念了。<br />
+        今天是2月17日，情人节</span>已经过去，别怀念了。
+        <br>
+        <a href="http://www.baidu.com">百度首页</a>
+        <br>还有一行
+    </div>
+  </body>
+</html>
