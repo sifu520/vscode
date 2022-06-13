@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,70 @@
     <title>表格--table</title>
 </head>
 <body>
-    
+    <p>表格中，最重要的两个元素，行与列 <br>
+        一张表----table <br>
+        table有一或多行--row----tr<br>
+        一行又能分一列或多列---column----td  <br>
+    </p>
+    <p>
+        合并行，合并列的小技巧，先把合并后，要消失的td删除掉，数一数留下的td要跨几行，或几列，<br>
+        再通过rowspan="N"，或者colspan="N"
+    </p>
+    <table border="1">
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>身高</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>20</td>
+            <td>1.76</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>23</td>
+            <td>1.80</td>
+        </tr>
+    </table> <br>
+    <table border="1">
+        <tr>
+            <td colspan="3">人 员 表</td>      <!--行合并-->
+        </tr>
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>身高</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>20</td>
+            <td>1.76</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>23</td>
+            <td>1.80</td>
+        </tr>
+    </table> <br>
+    <table border="1">
+        <tr>
+            <td colspan="3">人 员 表</td>
+        </tr>
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>身高</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>20</td>
+            <td rowspan="2">1.76</td>     <!--列合并-->
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>23</td>
+        </tr>
+    </table>
 </body>
 </html>

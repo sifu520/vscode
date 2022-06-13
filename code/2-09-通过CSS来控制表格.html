@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通过css来控制表格</title>
+    <style type="text/css">
+        table{
+            border: solid 1px blue;
+        }
+        td{
+            border: solid 1px red;
+        }
+        table{
+             border-collapse: collapse;    /*表格边框是否融合，相邻边被合并 */
+            /* border-collapse:separate;  默认值，边框独立  */
+            /*下面这两种属性受border-collapse影响，在border-collapse:separate;时才有效果。*/
+            border-spacing: 5px;   /*边框间距*/
+            empty-cells: hide; /*空表格是否显示*/
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>身高</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>20</td>
+            <td>176</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>23</td>
+            <td>173</td>
+        </tr>
+    </table> 
+    <p>
+        <ul>
+            <li>表格的达标要求</li>
+            <li>做一个3行3列基本表格</li>
+            <li>在上述表格基础上，完成列的合并</li>
+            <li>再完成行的合并</li>
+            <li>要能用css来控制表格的边框，以及边框的整合效果</li>
+        </ul> <br>
+        <ul>
+            <li>无序及有序列表的达标要求</li>
+            <li>知道无序及有序列表的显示效果的区别</li>
+            <li>能用无序列表+float制作一个导航</li>
+        </ul>
+    </p>
+</body>
+
+</html>
