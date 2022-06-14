@@ -3,8 +3,9 @@ img{
 }
 #container{
     width: 1002px;
-    background: gray;
+/*    background: gray;
     margin: 0 auto;
+*/
 }
 #header{
     height: 128px;
@@ -25,16 +26,27 @@ img{
     line-height: 37px;
     background: url(images/nav_bg.gif);
     text-align: center;
+/* 
+font:必须加字体，否则可能引来解析错误
+ */
+ font: 15px/37px simhei;
+}
+
+#nav li a:visited{
+    color: #363636;
 }
 
 #nav li a:hover{
     background: url(images/nav_on.gif);
+    color: #FFF;
 }
 
 #banner{
+    width: 1000px;
     height: 237px;
-    background: blue;
-    margin: 10px 0;
+   /* background: blue;  */
+    margin: 8px 0;
+    padding: 0 1px;
 }
 #main{
     height: 464px;
