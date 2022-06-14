@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深入学习背景</title>
+    <style type="text/css">
+        #header{
+            width: 200px;
+            height: 200px;
+            border:solid 1px blue;
+            background: gray url(../1.webp) no-repeat fixed;  /*图片优先显示，图片失效时，显示颜色*/
+        }
+        #jian{
+            width: 40px;
+            height: 40px;
+            background: url(../1.webp) -45px -35px; /*使用postion 坐标调整大图片显示内容*/
+        }
+    </style>
+</head>
+<!-- 
+背景：
+Background:color image
+color:带表纯颜色背景。例：red,blue,#FFF,#3098E1
+image:url(图片路径)。注意：图片路径不加引号
+Repeat:铺排效果。例：repeat-x,repeat-y,repeat,no-repeat
+attachment:滚动效果；例：fixed相对屏幕不变位置，像被钉住，scorll(默认效果),随元素滚动
+(兼容性不好，用的不多)
+Postion:背景图片位置  例：center top/ -20px -30px
+
+多个元素共用一个背景图！
+这种现象在大网站非常常见。
+作用：可以节省很多次的请求，把众多的背景图的请求压缩为1次。
+因为大网站每天的访问量都可能上亿，这时的性能提升就很明显。
+
+如果用一个比元素还要大的图左背景时，
+图片与元素是如何重合的，或者说，用图片的哪一部分做元素的背景呢？
+答：默认是把背景图的原点与元素的原点重合，元素有多答，自然截出多大的背景图。
+
+比如一条床单铺在一小桌子上，在css是这样铺；把床单的左上角和桌子的左上角对齐，多余的部分，不要。
+
+
+
+做网站时背景图片的一个小技巧：
+比如某个元素设置了以黑色为主的图片做背景图，那么，一般要为该元素设一个背景色，
+目的是，当背景图失效时，使网站的视觉效果不会反差太大。
+
+利用像素定位的关键：
+1、在计算机屏幕上，左上角是原点。X轴往右为正，Y轴往下为正。
+2、默认是背景图的原点和元素的原点重合。
+ -->
+<body>
+        <div id="header"></div>
+        <H2>通过背景的postion属性来实现多个元素共用一张背景图的效果</H2>
+
+        <div id="jian"></div>
+</body>
+</html>
