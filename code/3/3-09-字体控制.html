@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体控制</title>
+<style type="text/css">
+#fstyle{
+   font-style: italic; 
+}
+
+#fweight{
+    font-weight: bolder;
+}
+#fsize{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#ffamily{
+    font-family:YaHei Consolas Hybrid,simHei;
+    color: red;
+}
+#ffont{
+    font: italic bolder 20px/30px 黑体,simHei;
+}
+</style>
+<!-- 
+    font-style:显示风格
+    作用：控制文字的是否斜体显示或正常显示。
+    例：css选择器(font-style:italic;) //normal,oblique
+
+    font-weight:字体粗细
+    作用：控制文字的粗细程度
+    例：css选择器(font-weight:bolder;) //normal,bolder
+
+    font-size:字体大小
+    作用：控制字体的大小
+    例：css选择器(font-size:30px;)  //则每个字符以30像素的大小显示。
+
+    line-height: 行高
+    作用：设置每行文字所占的高度，(特点：在一行内，文字总是相对于行居中显示，所以可以利用这个特性让文字相对于容器居中)
+    例：css选择器(line-height:30px;)  //则每一行占据30个像素高。
+
+    font-family:设置字体
+    作用：设置显示文字所用的字体。
+
+    要点：
+        先英文字体，再中文中体
+        先特殊字体，再安全字体
+        先具体字体，再字体大类
+
+    注意：当声明多个字体，如果某个字体名称含多个单词，或者中文字体，则字体名用双引号包起来
+
+    把所有字体属性写在一行里：
+    font:style weight size/line-height family
+
+    字的颜色如何控制：
+    color:red;/#EEE;
+
+    font可以简写为一行，但要注意顺序问题。
+    font的具体顺序和格式为： style weight size/line-height family
+ -->
+</head>
+<body>
+        <p id="fstyle">字体风格 font-style</p>
+        <p id="fweight">字体粗细 font-weight</p>
+        <p id="fsize">字体尺寸 font-size</p>
+        <p id="ffamily">设置字体，font-family</p>
+        <p id="ffont"> font可以简写为一行，但要注意顺序问题。<br>
+            font的具体顺序和格式为： style weight size/line-height family</p>
+</body>
+</html>

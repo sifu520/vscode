@@ -18,11 +18,12 @@ img{
 	height: 37px;
 
 }
-#nav li a:link{
-	background: url(images/nav_bg.gif);
-	width: 90px;
-	height: 37px;
-	display:block;
+#nav li a:link {
+    display: block;
+    width: 90px;
+    height: 37px;
+    line-height: 37px;
+    background: url(images/nav_bg.gif);
     text-align: center;
 }
 
