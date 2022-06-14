@@ -16,15 +16,20 @@ img{
 	margin-right: 2px;
 	width: 90px;
 	height: 37px;
-	background: ;
+
 }
-#nav li a{
+#nav li a:link{
 	background: url(images/nav_bg.gif);
 	width: 90px;
 	height: 37px;
 	display:block;
-
+    text-align: center;
 }
+
+#nav li a:hover{
+    background: url(images/nav_on.gif);
+}
+
 #banner{
     height: 237px;
     background: blue;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+<style type="text/css">
+a{
+    background: orange;
+}
+
+a:hover{            /*鼠标放在链接上的状态*/
+    background: red;
+    color: yellow;
+}
+
+</style>
+</head>
+<body>
+    <div>
+        <p>伪类选择器，选择不是某一种元素，而是某种元素的某种状态</p>
+        <p>对于链接，我们可以针对的4种状态来设置显示效果。</p>
+        <ul>
+            <li>链接没被点击过  link</li>
+            <li>链接被点击过    visited</li>
+            <li>鼠标放在链接上  hover</li>
+            <li>鼠标点击的瞬间  active</li>
+            <li>顺序要求：lvha</li>
+        </ul>
+        <a href="#">百度</a>
+        <a href="#">腾讯</a>
+        <a href="#">搜狐</a>
+        <a href="#">新浪</a>
+    </div>
+</body>
+</html>
