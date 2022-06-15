@@ -55,6 +55,25 @@ font:必须加字体，否则可能引来解析错误
     height: 464px;
     background: pink;
 }
+#bigtitle{
+    border: solid 1px blue;
+    width: 694px;
+    height: 36px;
+    background: gray url(images/index_main_top_bg.gif) repeat-x;
+}
+#bigtitle img{
+    float: left;
+}
+#bigtitle h1{
+    border: solid 1px red;
+    float: left;
+}
+.more{
+    border: solid 1px #000;
+    width: 40px;
+    height: 36px;
+    float: right;
+}
 #rside{
     width: 294px;
     float:right;
@@ -62,18 +81,20 @@ font:必须加字体，否则可能引来解析错误
     background: gray;
 }
 #footer{
+    color:#808080;
     margin-top: 10px;
     height: 60px;
 /*    background: rgb(207, 245, 68);   */
 }
 #footer ul{
+    padding-left: 10px;
+    width: 992px;
     height: 35px;
     background:gray url(images/footcorner_left_bg.gif);
 }
 #footer li{
     height: 35px;
     float: left;
-    color: #808080;
 }
 #footer li a:link {
     color:#808080;
@@ -81,6 +102,15 @@ font:必须加字体，否则可能引来解析错误
 }
 #footer li a:hover{
     color: #ff832c;
+}
+#footer p{
+    font: 12px/29px "Times New Roman","宋体";
+}
+#footer p a:link{
+    color:#ff832c;
+}
+#footer p a:hover{
+    color: #808080;
 }
 .four{
     width: 337px;
