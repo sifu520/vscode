@@ -17,7 +17,6 @@ img{
 	margin-right: 2px;
 	width: 90px;
 	height: 37px;
-
 }
 #nav li a:link {
     display: block;
@@ -26,21 +25,19 @@ img{
     line-height: 37px;
     background: url(images/nav_bg.gif);
     text-align: center;
+    color: #363636;
 /* 
 font:必须加字体，否则可能引来解析错误
  */
  font: 15px/37px simhei;
 }
-
 #nav li a:visited{
     color: #363636;
 }
-
 #nav li a:hover{
     background: url(images/nav_on.gif);
     color: #FFF;
 }
-
 #banner{
     width: 1000px;
     height: 237px;
@@ -66,8 +63,24 @@ font:必须加字体，否则可能引来解析错误
 }
 #footer{
     margin-top: 10px;
-    height: 53px;
-    background: rgb(207, 245, 68);
+    height: 60px;
+/*    background: rgb(207, 245, 68);   */
+}
+#footer ul{
+    height: 35px;
+    background:gray url(images/footcorner_left_bg.gif);
+}
+#footer li{
+    height: 35px;
+    float: left;
+    color: #808080;
+}
+#footer li a:link{
+    color: red;
+    font: 14px/35px "微软雅黑",serif;
+}
+#footer li a:hover{
+    color: #ff832c;
 }
 
 .four{
@@ -77,14 +90,12 @@ font:必须加字体，否则可能引来解析错误
     float: left;
     margin: 5px;
 }
-
 #view{
     width: 294px;
     height: 227px;
     margin-bottom: 10px;
     background: rgb(15, 194, 185);
 }
-
 #contact{
     width: 294px;
     height: 227px;
