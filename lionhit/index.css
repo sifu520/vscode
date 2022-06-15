@@ -53,26 +53,30 @@ font:必须加字体，否则可能引来解析错误
     width: 694px;
     float: left;
     height: 464px;
-    background: pink;
+    background: pink; 
 }
 #bigtitle{
-    border: solid 1px blue;
     width: 694px;
     height: 36px;
     background: gray url(images/index_main_top_bg.gif) repeat-x;
 }
 #bigtitle img{
     float: left;
+    margin: 4px 10px 0 10px;
 }
 #bigtitle h1{
-    border: solid 1px red;
+    font: 16px/36px Arial,"微软雅黑",sans-serif;
     float: left;
+    color: #808080;
 }
 .more{
-    border: solid 1px #000;
-    width: 40px;
-    height: 36px;
+    margin-right: 10px;
     float: right;
+    font: 12px/36px  Arial,"黑体",sans-serif;
+    color: #808080;
+}
+a.more:hover{
+    color: #ff832c;
 }
 #rside{
     width: 294px;
@@ -90,7 +94,7 @@ font:必须加字体，否则可能引来解析错误
     padding-left: 10px;
     width: 992px;
     height: 35px;
-    background:gray url(images/footcorner_left_bg.gif);
+    background: url(images/footcorner_left_bg.gif);
 }
 #footer li{
     height: 35px;
@@ -114,10 +118,25 @@ font:必须加字体，否则可能引来解析错误
 }
 .four{
     width: 337px;
-    height: 222px;
-    background: white;
+    height: 204px;
+    background: #EEE;
     float: left;
     margin: 5px;
+}
+.four h2{
+    color: #A0A0A0;
+    font: 16px/19px Arial,"微软雅黑","黑体",sans-serif;
+    margin: 12px 0 0 11px;
+}
+.four img{
+    float: left;
+    border: solid 5px #FFF;
+    margin-left: 10px;
+}
+.four ul{
+    border: solid 1px red;
+    float:left;
+    color: #808080;
 }
 #view{
     width: 294px;
