@@ -75,14 +75,13 @@ font:必须加字体，否则可能引来解析错误
     float: left;
     color: #808080;
 }
-#footer li a:link{
-    color: red;
+#footer li a:link {
+    color:#808080;
     font: 14px/35px "微软雅黑",serif;
 }
 #footer li a:hover{
     color: #ff832c;
 }
-
 .four{
     width: 337px;
     height: 222px;
@@ -99,5 +98,5 @@ font:必须加字体，否则可能引来解析错误
 #contact{
     width: 294px;
     height: 227px;
-    background: slateblue;
+    background: rgb(54, 54, 194);
 }
