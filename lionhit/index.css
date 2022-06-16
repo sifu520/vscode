@@ -53,9 +53,10 @@ font:必须加字体，否则可能引来解析错误
     width: 694px;
     float: left;
     height: 464px;
-    background: pink; 
+ /*   background: pink;  */
 }
 #bigtitle{
+
     width: 694px;
     height: 36px;
     background: gray url(images/index_main_top_bg.gif) repeat-x;
@@ -100,8 +101,10 @@ a.more:hover{
     height: 35px;
     float: left;
 }
-#footer li a:link {
+#footer li a{
     color:#808080;
+}
+#footer li a:link {
     font: 14px/35px "微软雅黑",serif;
 }
 #footer li a:hover{
@@ -110,7 +113,7 @@ a.more:hover{
 #footer p{
     font: 12px/29px "Times New Roman","宋体";
 }
-#footer p a:link{
+#footer p a{
     color:#ff832c;
 }
 #footer p a:hover{
@@ -134,9 +137,19 @@ a.more:hover{
     margin-left: 10px;
 }
 .four ul{
-    border: solid 1px red;
     float:left;
+}
+.four ul li {
+    padding-left: 12px;
+    background: url(images/service_intro_bg.gif) no-repeat left center;
+    margin-bottom: 10px;
+}
+.four ul li a{
+    font: 12px "Times New Roman","宋体",serif;
     color: #808080;
+}
+.four ul li a:hover{
+    text-decoration: underline;
 }
 #view{
     width: 294px;

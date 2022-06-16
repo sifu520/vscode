@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bug原因之</title>
+</head>
+<!-- 
+    css控制之bug伴我到深夜
+        bug的几种常见原因
+        没有使用正确的doctype                    正确声明doctype
+        各浏览器对不同标签的初始值不同            css初始化
+        自身书写不规范引起                       面壁
+        浏览器bug引起                           css  hack
+
+    css控制之bug伴我到深夜
+                    ie常见bug及解决方案
+    和模型bug                              使用严格doctype声明
+    双倍margin bug                         _display:inline;
+    3像素margin bug                        规范浮动与清除浮动
+
+    Bug调试
+
+    1、doctype没声明，带来的ie浏览器盒模型解析bug
+    解决：进行xhtml 正确声明，如strict声明
+
+    2、浏览器的初始值不同带来的。
+    解决：进行css初始化
+
+    3、自身代码不规范带来的Bug
+    解决：面壁
+
+    4、浏览器的bug带来的
+
+    4.1、ie6,有双倍margin bug
+    是指：浮动方向上的margin值会加倍。
+    例如：某元素float:left,margin-left的值是10px,那么页面上会解析位20px;
+    同时，float:right,margin-right也会加倍
+    解决方案：设置漂浮元素的_display:inline;
+
+    4.2、3像素bug
+    解决：规范float的用法
+
+    4.3、ie关于a标签的4个伪类的兼容bug
+    答：对于ie，如果a:link方式声明了标签样式
+    可能会引来visited伪类的解析异常
+
+    解决：去掉a:link ，以 a 来代替。
+ -->
+<body>
+    
+</body>
+</html>
