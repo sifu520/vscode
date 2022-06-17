@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+写一个网页的工作流程
+1、划块，首页分析网页的效果图，分析如何分块。分块的原则：从上到下，从左到右，从大到小。
+2、布局： 
+盒子模型: 
+块状元素可以看成一个硬盒子。 
+盒子的属性：width,height,padding,border,margin,background.
+background：体现的范围，width * height + padding
+
+盒子有哪些特点：
+1:默认情况下，盒子独占一行
+2:盒子有宽，有高
+3:盒子可以设置外边距，即盒子与盒子之间的距离
+4:例子可以有边框，可以设置边框的精细，颜色，样式
+5:盒子与盒子内部的内容，可以保持一定距离，即内边距。
+
+浮动模型：
+当一个块状元素设置浮动之后，
+应这样来看待此元素：
+此元素原地上升起一定高度，漂浮在半空中，没浮动前所占的区域让出来。
+所以后来的普通块状元素，占据漂浮块原来的空间，因此视觉上看，后来的块将被浮动块盖住。
+如果后来的仍然是浮动元素，则认为两者浮动的高度一样，因此并排摆放
+
+如果不想让后来的被盖住，可以声明 clear:left/right/both.
+分别带表，本块的上面不允许有左浮元素，右浮元素，左右浮元素。
+
+3、填写内容,html 标签 ,img,ul ,h1,h2,P,span.
+
+4、css细化控制显示效果
+背景控制：background
+文本控制：text-indent,text-align,text-decoration,
+字体：大小，行距，样式，粗细，字体
+颜色控制：color
+
+从整个网站的角度看，我们如何工作？
+1、首先观察所有的所有页面的布局，观察布局的共同点，进行归类。
+2、引入初始值CSS
+3、把布局相同的一类的页面，做出架子(包括html和css)然后利用此页面做模板，
+每个页面不同的部分，我们再写不同的CSS来单独控制。
+
+也就是说：做出的模板页面，应该有2个css文件，1：初始化css， 2：模板框架css
+例：template.html  + reset.css   +  frame.css
+此时，以首页为例，index.html
+那么，可以另存template.html为index.html
+再单独写一个index.css，专门负责控制首页的特殊部分
+
+二级页面，sub.css
+
+结课作业：
+1、完成公司网站首页
+2、完成公司网站"业务介绍"栏目的首页
+3、完成注册页面，注册表单含有一下几项
+姓名，密码，性别，爱好，头像，学历，简介，和一个隐藏域，能够提交和重置
+
+注册表单的文字颜色等要和公司网页的风格一致
+
+以上3题：要求：把css规划好，框架代码与具体代码拆开，做到代码重用
+--> 
+</body>
+</html>

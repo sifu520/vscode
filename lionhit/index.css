@@ -45,6 +45,21 @@ font:必须加字体，否则可能引来解析错误
     margin: 8px 0;
     padding: 0 1px;
 }
+form{
+    float: right;
+    margin-top: 11px;
+    margin-right: 10px;
+    padding-right: 30px;
+}
+form p{
+    float: left;
+}
+#seach{
+    width: 200px;
+    border: 0;
+    color: #808080;
+}
+
 #main{
     height: 464px;
     /* background: green; */

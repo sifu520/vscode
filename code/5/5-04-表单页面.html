@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单页面</title>
+</head>
+<!-- 
+    表单总结
+    1、任何的类型的表单项，必有2个最本质的东西；
+    Name < --- > value, 即：变量名 < --- > 变量值
+
+    2、表单的action,method
+    Action 代表  表单要提交到的地址。
+    Method 代表 表单提交的方法(即，表单数据如何发送)
+
+    3、method的两种方法比较
+    Get 与 post,
+    Get 提交表单的值直接体现在浏览器上
+    Post提交直接提交到action规则的url,url不变
+
+    get提交直接把数据体现在地址栏上，不够安全
+    而post不改变地址栏，直接发送数据，因此注册这样的场合，适合用post提交。
+
+    Get提交，因为数据在地址栏上体现，因此，能够提交的数据大小受限(一般来说，受浏览器和服务器的具体限制)。一般来说，能够提交2K以内的数据。
+    Post提交，理论上没有规定上限值
+
+    Get 无法上传文件类型
+    Post 可以上传文件类型
+
+    html标签 之表单太重要
+    文本框，密码框，单选按钮，复选框，文件域，提交按钮，重置按钮，普通按钮，下拉列表，文本域
+    图片类型，隐藏类型
+
+    表单项：
+    普通文本框：<input type="text" name="XX" value="XX">
+    密码框：<input type="passwd" name="XXX" value="XXX">
+    单选按钮：<input type="radio" name="XXX" value="XXX">
+    复选按钮：<input type="checkbox" name="XXX" value="XXX">
+
+    提交：<input type="submit" value="提示文字">  (一般不要加 name)
+    重置：<input type="reset" value="提示文字">
+
+    如何给表单项加默认值？
+    答：对于text文本框，passwd密码框，直接加value="XXX"
+
+    对于textarea 大块文本域，默认值直接写在textarea标签中间
+
+    对于单选radio和多选checkbox,在input中添加checked="checked" 就能默认选中
+
+    对于select 下拉框，option 选项加 selected="selected" 就能默认选中
+
+    对于文件类型：不能设置 默认值。
+ -->
+<body>
+    <form action="" method="post">
+        请填写用户名：<input type="text" name="username">  <br>
+        请填写email：<input type="text" name="email"> <br>
+        上传头像：<input type="file" name="touxiang"> <br>
+        请填写密码：<input type="text" name="passwd"> <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

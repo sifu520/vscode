@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    框架集：frameset
+    1、最外层的框架页面，doctype声明用frameset声明，不用strict
+    2、frameset页面，不能有body标签
+
+    具体用法：
+    拆成2行为例：
+    <frameset rows="200px,*">
+    <frame src="源网页 1" name="XXX"></frame>     推荐给frame加一个name，方便控制
+    <frame src="源网页 2" name="YYY"></frame>
+    </frameset>
+
+    拆成2列为例：
+    <frameset cols="20%,*">
+    <frame src="源网页 1" name="XXX"></frame>     推荐给frame加一个name，方便控制
+    <frame src="源网页 2" name="XXX"></frame>
+    </frameset>
+
+    拆成经典的后台管理样式，品字形
+        <frameset rows="150px,*">
+        <frame src="源网页 1" name="XXX"></frame>
+        <frameset cols="30%,*">
+            <frame src="源网页 1" name="XXX></frame>
+            <frame src="源网页 2" name="XXX"></frame>
+        </frameset>
+    </frameset>
+
+    经典问题：左侧的导航链接点击时，页面如何在右侧区域显示？
+    答：给右侧的frame加一个 name属性。
+    然后，左侧的链接，加一个target 属性，且值为右侧 frame的name;
+
+    如何点击链接，页面如何跳出框架，直接在浏览器上显示，(如退出登录效果)
+    答：target 属性值设为 "_top",即链接效果直接跳到浏览器顶层。
+ -->
+    <frameset rows="200px,200px,*">
+        <frame src="a.html"></frame>
+        <frame src="b.html"></frame>
+        <frame src="c.html"></frame>
+    </frameset>
+</html>
