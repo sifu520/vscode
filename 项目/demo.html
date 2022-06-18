@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav li .icon{
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav{
+            width: 240px;
+            position: fixed;
+            right: -150px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .nav li{
+            width: 240px;
+            height: 46px;
+            display: flex;
+            align-items: center;  /*文字居中对齐*/
+            margin: 8px 0 8px auto;
+            transition:  all 0.5s ease-in-out;
+        }
+
+        .nav-txt{
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            color: #c8a12c;
+            background-color: #222120;
+            text-indent: 40px;
+            /* 首行缩进 */
+            letter-spacing: 3px;
+            opacity: 0;
+            /* 透明度 */
+        }
+
+        .nav li:nth-child(1) .icon{
+            background: url(img/p1.png) no-repeat center/cover;
+            /* 背景：图片路径  不要平铺  定位/保持比例不变，沾满 */
+        }
+        .nav li:nth-child(2) .icon{
+            background: url(img/p3.png) no-repeat center/cover;
+            /* 背景：图片路径  不要平铺  定位/保持比例不变，沾满 */
+        }
+        .nav li:nth-child(3) .icon{
+            background: url(img/p5.png) no-repeat center/cover;
+            /* 背景：图片路径  不要平铺  定位/保持比例不变，沾满 */
+        }
+        .nav li:nth-child(4) .icon{
+            background: url(img/p7.png) no-repeat center/cover;
+            /* 背景：图片路径  不要平铺  定位/保持比例不变，沾满 */
+        }
+        .nav li:nth-child(5) .icon{
+            background: url(img/p9.png) no-repeat center/cover;
+            /* 背景：图片路径  不要平铺  定位/保持比例不变，沾满 */
+        }
+        
+        li:hover{
+            transform: translateX(-130px);
+            border: 2px solid #c8a12c;
+        }
+
+        li:hover .nav-txt{
+            opacity: 1;
+        }
+
+        .nav li:nth-child(1):hover .icon{
+            background: url(img/p2.png) no-repeat center/cover;
+        }
+        .nav li:nth-child(2):hover .icon{
+            background: url(img/p4.png) no-repeat center/cover;
+        }
+        .nav li:nth-child(3):hover .icon{
+            background: url(img/p6.png) no-repeat center/cover;
+        }
+        .nav li:nth-child(4):hover .icon{
+            background: url(img/p8.png) no-repeat center/cover;
+        }
+        .nav li:nth-child(5):hover .icon{
+            background: url(img/p10.png) no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/pic.jpg" alt="">
+    <img src="img/pic2.jpg" alt="">
+    <ul class="nav">
+        <li>
+            <div class="icon"></div>
+            <div class="nav-txt">集结启航</div>
+        </li>
+        <li>
+            <div class="icon"></div>
+            <div class="nav-txt">舰船故事</div>
+        </li>
+        <li>
+            <div class="icon"></div>
+            <div class="nav-txt">舰船档案</div>
+        </li>
+        <li>
+            <div class="icon"></div>
+            <div class="nav-txt">精选投稿</div>
+        </li>
+        <li>
+            <div class="icon"></div>
+            <div class="nav-txt">游戏特色</div>
+        </li>
+    </ul>
+</body>
+</html>
