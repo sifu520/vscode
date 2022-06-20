@@ -79,7 +79,7 @@
 * 如果用户想看一个网页，结果用不同浏览器打开效果不同，用户体验极差！
 
 Web标准：让不同的浏览器按照相同的标准显示结果，让<font color="red">展示的效果统一</font>！
-![浏览器](../../../../../Typora学习笔记/assets/HTML前端学习笔记/浏览器.png)
+![浏览器](./images/浏览器.png)
 
 #### 1.3.2 Web标准的构成
 
@@ -110,7 +110,7 @@ Web标准中分成三个构成：
 	#### 1.3.3 Web标准的记忆方法
 
 Web标准要求页面实现：结构、表现、行为三层分离
-![分层](../../../../../Typora学习笔记/assets/HTML前端学习笔记/分层.png)
+![分层](./images/分层.png)
 
 ## 2. HTML初体验
 
@@ -133,7 +133,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 3. 在文件上点击鼠标右键-->重命名-->修改文件后缀名==.html==
 4. 双击==文字变粗案例.html==，浏览器会自动打开文件并显示之前输入的内容
 
-![新建](../../../../../Typora学习笔记/assets/HTML前端学习笔记/新建.png)
+![新建](./images/新建.png)
 
 ### 2. HTML骨架结构
 
@@ -145,7 +145,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 * 网页中也是存在固定的结构的，如：整体、头部、标题、主体
 
 网页中的固定结构是通过特定的==HTML标签==进行描述的
-![结构图](../../../../../Typora学习笔记/assets/HTML前端学习笔记/结构图.png)
+![结构图](./images/结构图.png)
 
 	### 3. 开发工具的使用
 
@@ -161,7 +161,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 
 前端开发神器：VS Code-->速度快、体积小、插件多
 
-![工具](../../../../../Typora学习笔记/assets/HTML前端学习笔记/1.png)
+![工具](./images/1.png)
 
 #### 2.3.2 VS Code使用前要求
 
@@ -169,7 +169,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 2. Chinses(Simplified) Language Pack for Visual Studio Code 简体中文插件安装完毕
 3. open in browser 直接打开浏览器插件安装完毕
 
-![2](../../../../../Typora学习笔记/assets/HTML前端学习笔记/2.png)
+![2](./images/2.png)
 
 #### 2.3.3 VS Code创建网页的步骤
 
@@ -177,7 +177,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 2. 将==day01代码==文件夹用鼠标左键按住不放，拖拽到VS Code窗口中，文件夹会显示在左侧目录上
 3. 点击目录上的==+新建文件按钮==创建页面，注意：==文件后缀名需要是.html==
 
-![3](../../../../../Typora学习笔记/assets/HTML前端学习笔记/3.png)
+![3](./images/3.png)
 
 #### 2.3.4 VS Code的基本快捷键
 
@@ -193,7 +193,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
    + 注意2：==必须保证当前文件后缀名是.html==，否则无效
    + VS Code自动生成的骨架多了其他标签，之后会介绍
 
-![4](../../../../../Typora学习笔记/assets/HTML前端学习笔记/4.png) ![5](../../../../../Typora学习笔记/assets/HTML前端学习笔记/5.png)
+![4](./images/4.png) ![5](../../../../../Typora学习笔记/assets/HTML前端学习笔记/5.png)
 
 #### 2.3.5 VS Code的其他快捷
 
@@ -237,7 +237,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 
 标签的结构图：
 
-![标签](../../../../../Typora学习笔记/assets/HTML前端学习笔记/标签.png)
+![标签](./images/标签.png)
 
 结构说明：
 
@@ -386,7 +386,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 * img标签需要展示对应的效果，需要借助标签的属性进行设置！
 
 ➢ 标签的完整结构图：
-![img](../../../../../Typora学习笔记/assets/HTML前端学习笔记/img.png)
+![img](./images/img.png)
 
 ➢ 属性注意点：
 
@@ -407,7 +407,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 * 当前网页和目标图片在同一个文件夹中，路径直接写目标图片的名字即可(包括后缀名)
 * 路径的情况有很多，稍后会详细介绍
 
-![6](../../../../../Typora学习笔记/assets/HTML前端学习笔记/6.png)
+![6](./images/6.png)
 
 #### 3.1.3 图片标签的alt属性
 
@@ -418,7 +418,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 * 当图片加载失败时，才显示alt的文本
 * 当图片加载成功时，不会显示alt的文本
 
-![7](../../../../../Typora学习笔记/assets/HTML前端学习笔记/7.png)
+![7](./images/7.png)
 
 #### 3.1.4 图片标签的title属性
 
@@ -429,7 +429,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 * 当鼠标悬停时，才显示的文本
 
 ➢ 注意点：title属性不仅仅可以用于图片标签，还可以用于其他标签
-![8](../../../../../Typora学习笔记/assets/HTML前端学习笔记/8.png)
+![8](./images/8.png)
 
 #### 3.1.5 图片标签的width 和height属性
 
@@ -442,7 +442,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 * 如果只设置width和height中的一个，另一个没设置的会自动等比例缩放(此时图片不会变形)
 * 如果同时设置了width和height两个，若设置不当此时图片可能会变形
 
-![9](../../../../../Typora学习笔记/assets/HTML前端学习笔记/9.png)
+![9](./images/9.png)
 
 #### 3.1.6 图片标签小结
 
@@ -502,7 +502,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 #### **3.2.4** 相对路径-同级目录
 
 ➢ 同级目录：当前文件和目标文件在同一目录中
-![图片1](../../../../../Typora学习笔记/assets/HTML前端学习笔记/图片1.png)
+![图片1](./images/图片1.png)
 
 ➢ 类似于：我（当前文件）和你（目标文件）都在大厅（一个文件夹中）
 
@@ -518,7 +518,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 #### **3.2.5** 相对路径-下级目录
 
 ➢ 下级目录：目标文件在下级目录中
-![图片2](../../../../../Typora学习笔记/assets/HTML前端学习笔记/图片2.png)
+![图片2](./images/图片2.png)
 
 ➢ 类似于：我在大厅，你累了去卧室休息了，我现在要找到你！
 
@@ -537,7 +537,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 #### **3.2.6** 相对路径-上级目录
 
 ➢ 上级目录：目标文件在上级目录中
-![图片3](../../../../../Typora学习笔记/assets/HTML前端学习笔记/图片3.png)
+![图片3](./images/图片3.png)
 
 ➢ 类似于：乾坤大挪移，我在卧室，你还在大厅，我现在要找到你！
 
@@ -570,7 +570,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 
 ➢ 场景：在页面中插入音频
 
-➢ 代码：&lt;audio src="./music.mp3"  controls&gt;&lt;/audio&gt;![图片4](../../../../../Typora学习笔记/assets/HTML前端学习笔记/图片4.png)
+➢ 代码：&lt;audio src="./music.mp3"  controls&gt;&lt;/audio&gt;![图片4](./images/图片4.png)
 
 ➢ 常见属性：
 
@@ -591,7 +591,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 
 ➢ 场景：在页面中插入视频
 ➢ 代码：&lt;video src="./video.mp4" controls>&lt;/video&gt;
-![图片5](../../../../../Typora学习笔记/assets/HTML前端学习笔记/图片5.png)
+![图片5](./images/图片5.png)
 
 ➢ 常见属性：
 
@@ -707,7 +707,7 @@ HTML(Hyper Text Markup Language)中文译为：超文本标记语言
 
 ### 5.2 今日热词案例--效果图
 
-![tu9](../../../../../Typora学习笔记/assets/HTML前端学习笔记/图片9.png)
+![tu9](./images/图片9.png)
 
 #### 5.2.2 今日热词案例--文字资料
 
